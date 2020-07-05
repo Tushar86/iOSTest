@@ -16,11 +16,11 @@ class Model {
     init?(dictionary : JSONDictionary) {
         guard let title = dictionary["title"] as? String,
             let image = dictionary["imageHref"] as? String,
-            let descriptio = dictionary["description"] as? String else {
+            let description = dictionary["description"] as? String else {
                 return nil
         }
         self.title = title
         self.image = image
-        self.description = descriptio
+        self.description = description
     }
 }
